@@ -12,6 +12,5 @@ DOWN ARROW or S: Move in the opposite direction the camera is facing.<br>
 SPACE: Jumping (Under Development)<br>
 
 <h2>Comments</h2>
-By using syncToPhyics() function from the aframe-physics-system, the movement can be controlled through JavaScript while ahering to the rules of the physics system.  This prevents the camera from moving through static bodies and allows the camera 
-to push dynamic bodies. The jumping functionality has proven to be more challenging and its behavior is currently inconsistent.
+By using syncToPhyics() function from the aframe-physics-system, the movement can be controlled through JavaScript while adhering to the rules of the physics system.  This prevents the camera from moving through static bodies and allows the camera to push dynamic bodies. The jumping functionality has proven to be more challenging and its behavior is currently inconsistent.
 
