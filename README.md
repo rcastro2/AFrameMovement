@@ -2,7 +2,7 @@ AFrame Movement
 ==============
 
 <a href="https://github.com/c-frame/aframe-physics-system" target="_blank">aframe-physics-system</a> is a JavaScript library which can be used to simulate physics on various components created using <a href="https://aframe.io/" target="_blank">
-aframe.io</a>, a web framework for building 3D/AR/VR experiences.  This project explores the ability to add physics components to the camera so that the player may interact with the world.  Currently the project explores preventing the camera from 
+aframe.io</a>, a web framework for building 3D/AR/VR experiences.  This project explores the ability to add physics capabilities to the camera so that the player may interact with the world.  Currently the project explores preventing the camera from 
 walking through walls, pushing dynamic objects and jumping on to static and dynamic objects.  
 
 <h2>Movement</h2>
