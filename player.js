@@ -56,38 +56,29 @@ class Player{
       
       if(this.pressed["ArrowUp"] || this.pressed["w"] ){
         let theta = this.obj.object3D.rotation.y + Math.PI;
-        let dz = this.moveStrength * Math.cos(theta);
-        let dx = this.moveStrength * Math.sin(theta);
-        this.driver.object3D.position.z += dz;
-        this.driver.object3D.position.x += dx;
-        this.driver.components["dynamic-body"].syncToPhysics();
+        this.updateDriverPosition(theta);
       }
       if(this.pressed["ArrowDown"] || this.pressed["s"] ){
         let theta = this.obj.object3D.rotation.y;
-        let dz = this.moveStrength * Math.cos(theta);
-        let dx = this.moveStrength * Math.sin(theta);
-        this.driver.object3D.position.z += dz;
-        this.driver.object3D.position.x += dx;
-        this.driver.components["dynamic-body"].syncToPhysics();
+        this.updateDriverPosition(theta);
       }
       if(this.pressed["ArrowLeft"] || this.pressed["a"] ){
         let theta = this.obj.object3D.rotation.y - Math.PI / 2;
-        let dz = this.moveStrength * Math.cos(theta);
-        let dx = this.moveStrength * Math.sin(theta);
-        this.driver.object3D.position.z += dz;
-        this.driver.object3D.position.x += dx;
-        this.driver.components["dynamic-body"].syncToPhysics();
+        this.updateDriverPosition(theta);
       }
       if(this.pressed["ArrowRight"] || this.pressed["d"] ){
         let theta = this.obj.object3D.rotation.y + Math.PI / 2;
-        let dz = this.moveStrength * Math.cos(theta);
-        let dx = this.moveStrength * Math.sin(theta);
-        this.driver.object3D.position.z += dz;
-        this.driver.object3D.position.x += dx;
-        this.driver.components["dynamic-body"].syncToPhysics();
+        this.updateDriverPosition(theta);
       }
       //this.driver.components["dynamic-body"].syncToPhysics();
       
     }catch{}
+  }
+  updateDriverPosition(theta){
+    let dz = this.moveStrength * Math.cos(theta);
+    let dx = this.moveStrength * Math.sin(theta);
+    this.driver.object3D.position.z += dz;
+    this.driver.object3D.position.x += dx;
+    this.driver.components["dynamic-body"].syncToPhysics();
   }
 }
