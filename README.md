@@ -6,10 +6,10 @@ aframe.io</a>, a web framework for building 3D/AR/VR experiences.  This project 
 walking through walls, pushing dynamic objects and jumping on to static and dynamic objects.  
 
 <b>Movement</b>
-UP ARROW or W: Move in the direction the camera is facing. 
-LEFT / RIGHT ARROW or A / D: Strafe movement left or right. 
-DOWN ARROW or S: Move in the opposite direction the camera is facing.
-SPACE: Jumping (Under Development)
+UP ARROW or W: Move in the direction the camera is facing. <br>
+LEFT / RIGHT ARROW or A / D: Strafe movement left or right. <br>
+DOWN ARROW or S: Move in the opposite direction the camera is facing.<br>
+SPACE: Jumping (Under Development)<br>
 
 <b>Comments</b>
 By using syncToPhyics() function from the aframe-physics-system, the movement can be controlled through JavaScript while ahering to the rules of the physics system.  This prevents the camera from moving through static bodies and allows the camera 
